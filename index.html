@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/menu.css">
+    <title>Açaiteria Tribus</title>
+    <style>
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .whatsapp-button img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-button img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+<menu id="menu">
+    <a href="index.html"><img id="logo" src="assets/logo.png" alt="Logo"></a>
+    <div id="menucontainer">
+        <a href="#">Contate-nos</a>
+        <a href="sobrenos.html">Sobre nós</a>
+        <a href="monteacai.html">Monte seu açaí</a>
+        <a target="_blank" href="https://maps.app.goo.gl/WuygUboKgi6uBZ5J9">Localização</a>
+        <button href="carrinhoSa.php"><a href="carrinhoSa.php"><img src="assets/carrinho.svg" alt="Carrinho"></a></button>
+        <button href="login.php"><a href="login.html">LOGIN</a></button>
+    </div>
+</menu>
+    <div id="slider">  
+        <div class="slides">  
+            <img src="assets/slide1.png"/>
+        </div>
+        <div class="slides">  
+            <img src="assets/slide2.png" width="100%" />
+        </div>
+        <div class="slides">  
+            <img src="assets/slide3.png" />
+        </div> 
+        <div class="slides">  
+            <img src="assets/slide4.png" />
+        </div> 
+        <div class="slides">  
+            <img src="assets/slide5.png"/>
+        </div>  
+        <div id="dot">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <div class="cardapio">
+        <a href="Omelete.html">
+            <div class="card">
+                <h3>Omelete</h3>
+                <img src="assets/omelete.png" alt="Omelete">
+                <div>A partir de R$15,00</div>
+            </div>
+        </a>
+        <a href="saladadefrutas.html">
+            <div class="card">
+                <h3>Salada de frutas</h3>
+                <img href="saladadefrutas.html" src="assets/saladadefrutas 1.png" alt="Salada de frutas">
+                <div>A partir de R$24,00</div>
+            </div>
+        </a>
+        <a href="salada.html">
+            <div class="card">
+                <h3>Saladas</h3>
+                <img src="assets/Salada-verde 1.png" alt="Salada">
+                <div>A partir de R$14,00</div>
+            </div>
+        </a>
+        <a href="panqueca.html">
+            <div class="card">
+                <h3>Panquecas</h3>
+                <img src="assets/panqueca_de_carne_moida_270_600_square 1.png" alt="Panqueca">
+                <div>A partir de R$21,00</div>
+            </div>
+        </a>
+    </div>
+    <a href="monteacai.html">
+        <div id="compraracai">
+            <img src="assets/monteseuacaipngimg.png" alt="Monte seu açaí">
+            <button><p>MONTE SEU AÇAÍ AQUI</p></button>
+        </div>
+    </a>
+
+    <!-- Botão flutuante do WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=5511999999999&text=Olá! Gostaria de mais informações." class="whatsapp-button" target="_blank">
+        <img src="assets/whatsapp-icon.png" alt="WhatsApp">
+    </a>
+
+    <footer>
+        <div class="footer-link-container">
+            <div>
+                <h2>Redes Sociais</h2>
+                <a target="_blank" href="https://www.facebook.com/tribusacaisurffood/?locale=pt_BR"><img src="assets/redes sociais/facebook.svg" alt="facebook"></a>
+                <a target="_blank" href="https://www.instagram.com/tribusacai/"><img src="assets/redes sociais/instagram.svg" alt="instagram"></a>
+				
+            </div>
+            <div>
+                <h2>Contato</h2>
+                <a href="tel:+5561981617820">(61) 98161-7820</a>
+                <div></div>
+                <div></div>
+            </div>
+        
+            <div>
+                <h2>Desenvolvido por:</h2>
+                <p>Igor Nicácio</p>
+                <p>Wesley Metficha</p>
+                <p>Railton Rodrigues</p>
+                <p>Gabriel Borgmann</p>
+            </div>
+        </div>
+        <div class="container">
+            <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="script/index.js"></script>
+    <script src="zap.js"></script>
+</body>
+</html>

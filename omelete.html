@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/produto.css">
+    <title>Omelete</title>
+    <style>
+        input[type="submit"],
+button {
+    background-color: #3A004F; /* Cor roxa do menu */
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+    margin-top: 1em;
+    width: 100%;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #1F0038; /* Cor mais escura ao passar o mouse */
+}
+    </style>
+</head>
+<body>
+    <menu id="menu">
+        <a href="index.html"><img id="logo" src="assets/logo.png" alt="Logo"></a>
+        <div id="menucontainer">
+            <a href="#">Contate-nos</a>
+            <a href="sobrenos.html">Sobre nós</a>
+            <a href="monteacai.html">Monte seu açaí</a>
+            <a target="_blank" href="https://maps.app.goo.gl/WuygUboKgi6uBZ5J9">Localização</a>
+            <a href="carrinhoSa.php"><button><img src="assets/carrinho.svg" alt="Carrinho"></button></a>
+        </div>
+    </menu>
+    <div id="itemcontainer">
+        <div id="imgcont">
+            <img src="assets/itens do cardapio/omelete.png" alt="omelete">
+            <h2>R$: 21,00</h2>
+        </div>
+        <div id="selectcont">
+            <h1>OMELETE</h1>
+            <p>Experimente a nossa omelete e transforme qualquer refeição em um momento especial. Simples, saudável e irresistível – a escolha perfeita para quem busca sabor e praticidade..</p>
+            <form action="carrinhoSa.php" method="post">
+                <input type="hidden" name="produto" value="Omelete">
+                <input type="hidden" name="preco" value="21.00">
+                <button type="submit">Adicionar ao Carrinho</button>
+            </form>
+        </div>
+    </div> 
+    <footer>
+        <div class="footer-link-container">
+            <div>
+                <h2>Redes Sociais</h2>
+                <a target="_blank" href="https://www.facebook.com/tribusacaisurffood/?locale=pt_BR"><img src="assets/redes sociais/facebook.svg" alt="facebook"></a>
+                <a target="_blank" href="https://www.instagram.com/tribusacai/"><img src="assets/redes sociais/instagram.svg" alt="instagram"></a>
+            </div>
+            <div>
+                <h2>Contato</h2>
+                <a href="tel:+5561981617820">(61) 98161-7820</a>
+                <div></div>
+                <div></div>
+            </div>
+            <div>
+                <h2>Desenvolvido por:</h2>
+                <p>Igor Nicácio</p>
+                <p>Wesley Metficha</p>
+                <p>Railton Rodrigues</p>
+            </div>
+        </div>
+        <div class="container">
+            <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
+

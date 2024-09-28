@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monte Seu Açaí</title>
+    <link rel="stylesheet" href="style/form.css">
+</head>
+<body>
+    <menu id="menu">
+        <a href="index.html"><img id="logo" src="assets/logo.png" alt="Logo"></a>
+        <div id="menucontainer">
+            <a href="#">Contate-nos</a>
+            <a href="sobrenos.html">Sobre nós</a>
+            <a href="monteacai.html">Monte seu açaí</a>
+            <a target="_blank" href="https://maps.app.goo.gl/WuygUboKgi6uBZ5J9">Localização</a>
+            <button href="carrinhoSa.php"><a href="carrinhoSa.php"><img src="assets/carrinho.svg" alt="Carrinho"></a></button>
+            <button href="login.php"><a href="login.html">LOGIN</a></button>
+        </div>
+    </menu>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Monte Seu Açaí</h1>
+    </header>
+
+    <!-- Formulário -->
+    <form action="carrinhoSa.php" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome_cliente" required><br><br>
+
+        <label for="tamanho">Escolha o tamanho:</label>
+        <select id="tamanho" name="produto" required>
+            <option value="Pequeno" data-preco="10.00">Pequeno - R$10,00</option>
+            <option value="Médio" data-preco="15.00">Médio - R$15,00</option>
+            <option value="Grande" data-preco="20.00">Grande - R$20,00</option>
+        </select><br><br>
+
+        <label for="ingredientes">Escolha seus ingredientes:</label><br>
+        <input type="checkbox" name="ingredientes[]" value="Granola"> Granola<br>
+        <input type="checkbox" name="ingredientes[]" value="Banana"> Banana<br>
+        <input type="checkbox" name="ingredientes[]" value="Morango"> Morango<br>
+        <input type="checkbox" name="ingredientes[]" value="Leite Condensado"> Leite Condensado<br>
+        <!-- Adicione mais ingredientes conforme necessário -->
+        <br>
+
+        <label for="entrega">Entrega:</label>
+        <input type="checkbox" id="entrega" name="entrega" value="1"><br><br>
+
+        <div id="endereco-section">
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco"><br><br>
+        </div>
+
+        <input type="hidden" id="preco" name="preco" value="10.00">
+        <input type="submit" value="Adicionar ao Carrinho">
+        <a href="index.html"><button type="button">Voltar</button></a>
+    </form>
+
+    <script>
+        document.getElementById('tamanho').addEventListener('change', function() {
+            var selectedOption = this.options[this.selectedIndex];
+            var preco = selectedOption.getAttribute('data-preco');
+            document.getElementById('preco').value = preco;
+        });
+    </script>
+</body>
+</html>
