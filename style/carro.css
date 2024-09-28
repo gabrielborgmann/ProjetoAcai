@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: inherit;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5em; /* Espaço para o menu fixo */
+    background-color: #f8f9fa;
+}
+
+menu {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #3A004F;
+    width: 100%;
+    height: 4em;
+    align-items: center;
+    z-index: 1000;
+}
+
+menu button {
+    width: 8em;
+    height: 3em;
+    margin: 1em;
+    border-radius: 0.5em;
+}
+
+menu button:hover {
+    background-color: #E3DE2F;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #3A004F;
+}
+
+menu button link {
+    width: 2em;
+    fill: #3A004F;
+}
+
+#logo {
+    height: 2.5em;
+    margin: 0.5em;
+}
+
+#menucontainer {
+    display: flex;
+    align-items: center;
+}
+
+#menucontainer a {
+    margin: 1em;
+    color: #DFDFDF;
+}
+
+#menucontainer a:hover {
+    color: #E3DE2F;
+    transition: 0.3s;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: #3A004F;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    width: 100%; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #3A004F;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.total {
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #3A004F;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+form button:hover {
+    background-color: #3A004F;
+}
+
+.empty-cart {
+    text-align: center;
+    font-size: 1.2em;
+    color: #666666;
+}
+
+/* Estilos para a mensagem de confirmação */
+.confirmation-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #3A004F;
+}
+
+/* Estilos para o link de realizar outra compra */
+.new-purchase-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #0056b3;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.new-purchase-link:hover {
+    color: #003366;
+}

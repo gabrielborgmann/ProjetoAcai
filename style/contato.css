@@ -1,0 +1,35 @@
+*{
+    border-radius: 0.5em;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #6B9C00;
+    height: 50em;
+    margin-top: 5em;
+}
+label{
+    font-weight: 700;
+    color:#ffff ;
+    margin-left:1em ;
+    margin-top: 1em;
+}
+input{
+    margin: 1em;
+    height: 2em;
+    width: 50em;
+}
+#mensagem{
+    display: flex;
+    justify-content: flex-start; /* Alterado para alinhar o conteúdo no início */
+    align-items: center; /* Adicionado para centralizar o texto horizontalmente */
+    height: 30em;
+}
+#button {
+    height: 5em;
+    cursor: pointer;
+    color: #6B9C00;
+    font-weight: 700;
+    background-color:#15001de1 ;
+}

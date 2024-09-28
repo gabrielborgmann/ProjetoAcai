@@ -1,0 +1,163 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+    margin-right: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #8B0000;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+}
+
+label i {
+    margin-right: 8px;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fafafa;
+    transition: border-color 0.3s;
+}
+
+select:focus {
+    border-color: #8B0000;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.options label {
+    flex: 1 1 45%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fafafa;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.options label:hover {
+    background-color: #f0f0f0;
+}
+
+.options input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #8B0000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button i {
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #a52020;
+}
+
+.cart {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.cart h2 {
+    margin-top: 0;
+}
+
+.cart ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart li:last-child {
+    border-bottom: none;
+}
+
+.cart .delete-btn {
+    background: none;
+    border: none;
+    color: #8B0000;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.cart .delete-btn:hover {
+    color: #a52020;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

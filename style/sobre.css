@@ -1,0 +1,23 @@
+
+#bloco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15em;
+    width: 50em;
+    height: 30em;
+    background-color: #6B9C00;
+    color: azure;
+    border-radius: 1em;
+    box-shadow:15px 15px 80px #15001d7e;
+}
+p{
+    width: 40em;
+    margin: 0.5em;
+    font-weight: 400;
+}
+h1{
+    font-weight: 700;
+    margin-bottom: 1em;
+}

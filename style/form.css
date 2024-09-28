@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: inherit;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5em; /* Espaço para o menu fixo */
+    background-color: #f8f9fa;
+}
+
+menu {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #3A004F;
+    width: 100%;
+    height: 4em;
+    align-items: center;
+    z-index: 1000;
+}
+
+menu button {
+    width: 8em;
+    height: 3em;
+    margin: 1em;
+    border-radius: 0.5em;
+}
+
+menu button:hover {
+    background-color: #E3DE2F;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #3A004F;
+}
+
+menu button link {
+    width: 2em;
+    fill: #3A004F;
+}
+
+#logo {
+    height: 2.5em;
+    margin: 0.5em;
+}
+
+#menucontainer {
+    display: flex;
+    align-items: center;
+}
+
+#menucontainer a {
+    margin: 1em;
+    color: #DFDFDF;
+}
+
+#menucontainer a:hover {
+    color: #E3DE2F;
+    transition: 0.3s;
+}
+
+header {
+    background-color: #3A004F;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Estilos para o formulário */
+
+ /* Estilos para o formulário */
+form {
+    background-color: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 2em auto;
+}
+
+label {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    color: #6B9C00; /* Cor verde do cabeçalho original */
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5em;
+}
+
+input[type="submit"],
+button {
+    background-color: #3A004F; /* Cor roxa do menu */
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+    margin-top: 1em;
+    width: 100%;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #1F0038; /* Cor mais escura ao passar o mouse */
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #3A004F;
+}
+
+/* Estilos para a seção de entrega */
+#endereco-section {
+    display: none;
+}
+
+#entrega:checked ~ #endereco-section {
+    display: block;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3A004F;
+    width: 100%;
+    margin-top: 15em;
+    height: 15em;
+    color: #d9d9d9;
+}
+
+.footer-link-container {
+    display: flex;
+    width: 100%;
+    height: 12em;
+    justify-content: space-evenly;
+    margin: 2em;
+}
+
+.footer-link-container a img {
+    width: 2em;
+    fill: #d9d9d9;
+}
+
+.footer-link-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-link-container div a {
+    color: #d9d9d9;
+    font-weight: 700;
+    align-self: flex-start;
+}

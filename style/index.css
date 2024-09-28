@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#slider {
+    margin: 5em auto;
+    width: 80%;
+    overflow: hidden;
+}
+
+.slides {
+    animation-name: fade;
+    animation-duration: 2s;
+    display: none;
+    transition: 1ms;
+    border-radius: 2em;
+}
+
+.slides img {
+    width: 100%;
+}
+
+#dot {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.dot {
+    display: inline-block;
+    border-radius: 50%;
+    background: #d3d3d3;
+    padding: 8px;
+    margin: 10px 5px;
+}
+
+.active {
+    background: black;
+}
+
+@media (max-width: 567px) {
+    #slider {
+        width: 100%;
+    }
+}
+
+.cardapio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Permitir quebra de linha */
+    margin: 2em 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1em; /* Adiciona espaço entre os cards */
+}
+
+.card img {
+    width: 15em;
+    margin: 1em;
+    transition: transform 0.3s; /* Efeito de hover mais suave */
+}
+
+.card:hover > img {
+    transform: scale(0.9); /* Efeito de redução ao passar o mouse */
+}
+
+.card h3 {
+    font-weight: bold; /* Corrigido de font-style para font-weight */
+    color: #3A004F;
+    font-size: 20px;
+}
+
+.card div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3A004F;
+    color: #d9d9d9;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold; /* Corrigido de font-style para font-weight */
+    width: 15em;
+    height: 2em;
+    border-radius: 0.5em;
+}
+
+#compraracai {
+    display: flex;
+    flex-direction: column; /* Adiciona coluna para o botão e a imagem */
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #6B9C00;
+    width: 90%;
+    border-radius: 2em;
+    height: auto; /* Permite que a altura seja dinâmica */
+    margin: 6em auto; /* Centraliza o elemento */
+    padding: 2em 0; /* Adiciona preenchimento */
+}
+
+#compraracai button {
+    color: #d9d9d9;
+    background-color: #3A004F;
+    width: 70%; /* Percentual para responsividade */
+    padding: 1em; /* Usa padding em vez de height */
+    border-radius: 2em;
+    cursor: pointer;
+    box-shadow: 15px 15px 80px #15001d7e;
+    border: none; /* Remove borda padrão */
+}
+
+#compraracai button:hover {
+    color: #6B9C00;
+    background-color: #d9d9d9;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#compraracai button p {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+}
+
+#compraracai img {
+    width: 45em;
+    margin-top: 2em;
+    margin-left: -8em;
+}
+
+footer {
+    background-color: #3A004F; /* Adiciona fundo ao rodapé */
+    color: white;
+    padding: 2em 0;
+}
+
+.footer-link-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas */
+    max-width: 1200px; /* Limita a largura máxima */
+    margin: auto; /* Centraliza o rodapé */
+}
+
+.footer-link-container h2 {
+    margin-bottom: 1em;
+}
+
+.footer-link-container a {
+    color: white; /* A cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.footer-link-container a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.container {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 0.9em; /* Diminuir a fonte do aviso de direitos autorais */
+}
